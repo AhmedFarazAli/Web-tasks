@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+   
+}
+.container,table{
+   display: flex;
+   place-content: center;
+   text-align: center;
+}
+.card{
+    text-align: center;
+}

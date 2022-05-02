@@ -1,0 +1,125 @@
+* {
+   
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 50, 50);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: azure;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.main form {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.main form .form-control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main form .form-control input {
+    padding: 6px;
+}
+
+#btn {
+    cursor: pointer;
+    padding: 7px 25px;
+    border: 0;
+}
+
+
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul li {
+    cursor: pointer;
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+ 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+ul li.done {
+   
+    border-color: rgb(102, 102, 102);
+    color: rgb(106, 106, 106);
+}
+ul li.done p{
+    text-decoration: line-through;
+}
+
+ul li.done button {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul li span:nth-of-type(2) {
+    font-size: 10px;
+}
+
+ul li span:nth-of-type(3) {
+    align-self: flex-end;
+
+}
+
+ul li span button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    font-size: 2em;
+    font-weight: bolder;
+  
+  
+}
+
+.main form > input:active,
+ul li span button:active {
+    transform: scale(0.95);
+
+}

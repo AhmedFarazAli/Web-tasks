@@ -1,0 +1,43 @@
+*{
+    background-color: lightgoldenrodyellow;
+    margin: 20px 0;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4em;
+    height: 2.4em;
+    font-size: 1.4em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.main span:nth-child(1){
+    background-color: orangered;
+}
+.main span:nth-child(2){
+    background-color: rgb(243, 243, 66);
+}
+.main span:nth-child(3){
+    background-color: limegreen;
+}
+.main span:nth-child(4){
+    background-color: rgb(175, 242, 242);
+}
+.main span:nth-child(5){
+    background-color: goldenrod;
+}
+
+.hover {
+    filter: invert(1);
+    transform: scale(1.2) ;
+    transition: all 0.5s;
+}
