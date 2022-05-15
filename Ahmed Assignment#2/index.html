@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ahmed Faraz Ali</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@media print {
+@page {
+    margin: 0;
+    size: A4;
+}
+
+*{
+    -webkit-print-color-adjust: exact;
+}
+
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5f6368;
+}
+
+.toCenter {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.33fr 1fr;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.grid-container .zone-1 {
+  padding: 40px 20px;
+  padding-left: 35px;
+  background: #d1d1d1;
+  width: 100%;
+  color: #313131;
+}
+.grid-container .zone-1 .profile {
+  display: inline-flex;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: url("ahmed.jpeg");
+  background-position: center top;
+  background-size: 100%;
+  border: 4px solid #2c2b29;
+}
+.grid-container .zone-1 .contact-box {
+  margin-top: 10px;
+}
+.grid-container .zone-1 .contact-box > * {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  margin-top: 25px;
+  align-items: center;
+}
+.grid-container .zone-1 .contact-box > * i {
+  font-size: 1.3em;
+}
+.grid-container .zone-1 .contact-box > * .text {
+  display: inline-flex;
+  color: #6b6b6b!important;
+}
+.grid-container .zone-1 .personal-box {
+  margin-top: 35px;
+}
+.grid-container .zone-1 .personal-box > *:not(.title) {
+  margin: 25px 0px;
+  grid-template-columns: 0.55fr 1fr;
+  display: grid;
+}
+.grid-container .zone-1 .personal-box .progress .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #313131;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+.grid-container .zone-1 .personal-box .progress .dot.active {
+  background-color: #9db858;
+}
+.grid-container .zone-1 .hobbies-box {
+  margin-top: 35px;
+}
+.grid-container .zone-1 .hobbies-box .logo {
+  margin: 10px 0px;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  font-size: 2.8em;
+  grid-row-gap: 15px;
+}
+.grid-container .zone-2 {
+  background: #2c2b29;
+  padding: 40px 20px;
+  padding-right: 75px;
+  color: #b5b5b4;
+}
+.grid-container .zone-2 .headTitle {
+  font-size: 2.1em;
+  color: #9db858;
+}
+.grid-container .zone-2 .headTitle h1 {
+  font-weight: 400 !important;
+}
+.grid-container .zone-2 .subTitle h1 {
+  font-weight: 400 !important;
+}
+.grid-container .zone-2 .box {
+  display: inline-block;
+  padding: 2px 70px 2px 20px;
+  margin-left: -20px;
+  margin-top: 35px;
+  background: #9db858;
+  color: #2c2b29;
+}
+.grid-container .zone-2 .group-1 .desc {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.grid-container .zone-2 .group-2 .desc {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.grid-container .zone-2 .group-2 .desc ul {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.grid-container .zone-2 .group-2 .desc ul:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -22px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #9db858;
+}
+.grid-container .zone-2 .group-2 .desc ul li {
+  list-style-type: none;
+  position: relative;
+}
+.grid-container .zone-2 .group-2 .desc ul li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -18px;
+  height: 60px;
+  border-left: 2px solid #9db858;
+}
+.grid-container .zone-2 .group-2 .desc ul:last-of-type li:before {
+  content: none;
+}
+.grid-container .zone-2 .group-2 .desc ul li div:last-of-type {
+  color: #9db858;
+  font-weight: bold;
+}
+.grid-container .zone-2 .group-3 .desc {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.grid-container .zone-2 .group-3 .desc ul {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.grid-container .zone-2 .group-3 .desc ul:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -22px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #9db858;
+}
+.grid-container .zone-2 .group-3 .desc ul li {
+  list-style-type: none;
+  position: relative;
+}
+.grid-container .zone-2 .group-3 .desc ul li:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -18px;
+  height: 100px;
+  border-left: 2px solid #9db858;
+}
+.grid-container .zone-2 .group-3 .desc ul:last-of-type li:before {
+  content: none;
+}
+.grid-container .zone-2 .group-3 .desc ul li div:nth-child(2) {
+  color: #9db858;
+  font-weight: bold;
+}		
+a{
+	text-decoration: none;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  padding: 10px 20px;
+}
+.navbar li a {
+  color: #000;
+}
+.navbar{
+	padding: 40px 50px;
+	margin-bottom: 50px;
+	background: #fff;
+}
+.pull-right{
+	float: right;
+	background: #000;
+	border-radius: 4px;
+}
+.pull-right a{
+	color: #fff!important;
+}
+.footer{
+	background: #fff;
+	padding: 20px 0px;
+}
+.footer p{
+	text-align: center;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+  <li class="pull-right"><a href="Ahmed's Resume.pdf" download="Resume" target="_blank">Download cv</a></li>
+</ul>
+</div>
+
+
+<div class="grid-container" data-aos="flip-right" data-aos-easing="ease-in-sine">
+	<div class="zone-1">
+		<div class="toCenter" data-aos="zoom-out-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+			<div class="profile"></div>
+		</div>
+		<div class="contact-box">
+			<div class="title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<h2 class="animate__backInUp">Contact</h2>
+			</div>
+			<div class="call" data-aos="fade-up" data-aos-offset="301" data-aos-easing="ease-in-sine"><i class="fas fa-phone-alt"></i>
+				<div class="text"><a href="https://www.linkedin.com/in/ahmedfarazali/" class="text">Linkedin</a></div>
+			</div>
+			<div class="home" data-aos="fade-up" data-aos-offset="303" data-aos-easing="ease-in-sine"><i class="fas fa-home"></i>
+				<div class="text"><a href="https://github.com/AhmedFarazAli" class="text">Git hub</a></div>
+			</div>
+			<div class="email" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine"><i class="fas fa-envelope"></i>
+				<div class="text"><a href="mailto:ahmedfarazali@gmail.com" class="text">ahmedfarazali@gmail.com</a></div>
+			</div>
+		</div>
+		<div class="personal-box">
+			<div class="title" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<h2>Personal Skills</h2>
+			</div>
+			<div class="skill-1" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<p>English</p>
+				<div class="progress">
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+				</div>
+			</div>
+			<div class="skill-2" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">Urdu<div class="progress">
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				<div class="dot active"></div>
+				</div>
+			</div>
+			<div class="skill-3" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">German<div class="progress">
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+			<div class="skill-4" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">British<div class="progress">
+					<div class="dot active"></div>
+					<div class="dot active"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+		</div>
+		<div class="hobbies-box">
+			<div class="title" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<h2>Hobbies</h2>
+			</div>
+			<div class="logo">
+				<div class="logo-1" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine"><i class="fas fa-gamepad"></i></div>
+				<div class="logo-2" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine"><i class="fas fa-tv"></i></div>
+				<div class="logo-3" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine"><i class="fas fa-camera"></i></div>
+				<div class="logo-4" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine"><i class="fas fa-lightbulb"></i></div>
+			</div>
+		</div>
+	</div>
+	<div class="zone-2">
+		<div class="headTitle" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+			<h2>Ahmed Faraz Ali</h2>
+		</div>
+		<div class="subTitle" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+			<h3>Student<h3>
+		</div>
+		<div class="group-1">
+			<div class="title" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<div class="box">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="desc" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">Aiming to be a part of an organization where I can fully utilize and enhance my skills, and contribute in
+				the success of company.</div>
+		</div>
+		<div class="group-2">
+			<div class="title" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<div class="box">
+					<h2>Education</h2>
+				</div>
+			</div>
+			<div class="desc">
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1">2019-Present | Bahria University</div>
+						<div class="msg-2">Karach, Pakistan</div>
+					</li>
+				</ul>
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1">2017-2019 | DJ Science College</div>
+						<div class="msg-2">Karach, Pakistan</div>
+					</li>
+				</ul>
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1">2008-2017 | Creek High School(CBM Campus)</div>
+						<div class="msg-2">Karach, Pakistan.</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="group-3">
+			<div class="title" data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+				<div class="box">
+					<h2>Interest</h2>
+				</div>
+			</div>
+			<div class="desc">
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1"> Mobile Applications</div>
+						<div class="msg-2">Lorem, ipsum dolor</div>
+						<div class="msg-3">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+					</li>
+				</ul>
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1"> Project Management</div>
+						<div class="msg-2">Lorem ipsum dolor sit</div>
+						<div class="msg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+					</li>
+				</ul>
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1"> Flutter</div>
+						<div class="msg-2">Lorem, ipsum</div>
+						<div class="msg-3">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+					</li>
+				</ul>
+				<ul data-aos="fade-up" data-aos-offset="305" data-aos-easing="ease-in-sine">
+					<li>
+						<div class="msg-1"> IOS Development</div>
+						<div class="msg-2">Lorem, ipsum</div>
+						<div class="msg-3">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+		<p>Copyrights © 2022 Powered By Ahmed Faraz Ali</p>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
